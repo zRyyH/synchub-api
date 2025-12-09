@@ -1,0 +1,545 @@
+{
+    "data": {
+        "product": {
+            "support_email": "support@hotmart.com.br",
+            "has_co_production": false,
+            "name": "Produto test postback2",
+            "warranty_date": "2017-12-27T00:00:00Z",
+            "is_physical_product": false,
+            "id": 0,
+            "ucode": "fb056612-bcc6-4217-9e6d-2a5d1110ac2f",
+            "content": {
+                "has_physical_products": true,
+                "products": [
+                    {
+                        "name": "How to Make Clear Ice",
+                        "is_physical_product": false,
+                        "id": 4774438,
+                        "ucode": "559fef42-3406-4d82-b775-d09bd33936b1"
+                    },
+                    {
+                        "name": "Organizador de Poeira",
+                        "is_physical_product": true,
+                        "id": 4999597,
+                        "ucode": "099e7644-b7d1-43d6-82a9-ec6be0118a4b"
+                    }
+                ]
+            }
+        },
+        "commissions": [
+            {
+                "currency_value": "BRL",
+                "source": "MARKETPLACE",
+                "value": 149.5
+            },
+            {
+                "currency_value": "BRL",
+                "source": "PRODUCER",
+                "value": 1350.5
+            }
+        ],
+        "purchase": {
+            "original_offer_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "checkout_country": {
+                "iso": "BR",
+                "name": "Brasil"
+            },
+            "sckPaymentLink": "sckPaymentLinkTest",
+            "order_bump": {
+                "parent_purchase_transaction": "HP02316330308193",
+                "is_order_bump": true
+            },
+            "approved_date": 1511783346000,
+            "offer": {
+                "code": "test",
+                "coupon_code": "SHHUHA"
+            },
+            "is_funnel": false,
+            "event_tickets": {
+                "amount": 1765222269907
+            },
+            "order_date": 1511783344000,
+            "price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "payment": {
+                "installments_number": 12,
+                "type": "CREDIT_CARD"
+            },
+            "full_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "business_model": "I",
+            "transaction": "HP16015479281022",
+            "status": "CANCELED"
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "Q58388177J",
+                "name": "Affiliate name"
+            }
+        ],
+        "producer": {
+            "legal_nature": "Pessoa Física",
+            "document": "12345678965",
+            "name": "Producer Test Name"
+        },
+        "subscription": {
+            "subscriber": {
+                "code": "I9OT62C3"
+            },
+            "plan": {
+                "name": "plano de teste",
+                "id": 123
+            },
+            "status": "ACTIVE"
+        },
+        "buyer": {
+            "checkout_phone_code": "999999999",
+            "address": {
+                "zipcode": "38400123",
+                "country": "Brasil",
+                "number": "10",
+                "address": "Avenida Francisco Galassi",
+                "city": "Uberlândia",
+                "state": "Minas Gerais",
+                "neighborhood": "Tubalina",
+                "complement": "Perto do shopping",
+                "country_iso": "BR"
+            },
+            "document": "69526128664",
+            "name": "Teste Comprador",
+            "last_name": "Comprador",
+            "checkout_phone": "99999999900",
+            "first_name": "Teste",
+            "email": "testeComprador271101postman15@example.com",
+            "document_type": "CPF"
+        }
+    },
+    "id": "72984c89-93d9-4d0b-9b00-2363898b5540",
+    "creation_date": 1765222269936,
+    "event": "PURCHASE_CANCELED",
+    "version": "2.0.0"
+}
+{
+    "data": {
+        "product": {
+            "support_email": "support@hotmart.com.br",
+            "has_co_production": false,
+            "name": "Produto test postback2",
+            "warranty_date": "2017-12-27T00:00:00Z",
+            "is_physical_product": false,
+            "id": 0,
+            "ucode": "fb056612-bcc6-4217-9e6d-2a5d1110ac2f",
+            "content": {
+                "has_physical_products": true,
+                "products": [
+                    {
+                        "name": "How to Make Clear Ice",
+                        "is_physical_product": false,
+                        "id": 4774438,
+                        "ucode": "559fef42-3406-4d82-b775-d09bd33936b1"
+                    },
+                    {
+                        "name": "Organizador de Poeira",
+                        "is_physical_product": true,
+                        "id": 4999597,
+                        "ucode": "099e7644-b7d1-43d6-82a9-ec6be0118a4b"
+                    }
+                ]
+            }
+        },
+        "commissions": [
+            {
+                "currency_value": "BRL",
+                "source": "MARKETPLACE",
+                "value": 149.5
+            },
+            {
+                "currency_value": "BRL",
+                "source": "PRODUCER",
+                "value": 1350.5
+            }
+        ],
+        "purchase": {
+            "original_offer_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "checkout_country": {
+                "iso": "BR",
+                "name": "Brasil"
+            },
+            "sckPaymentLink": "sckPaymentLinkTest",
+            "order_bump": {
+                "parent_purchase_transaction": "HP02316330308193",
+                "is_order_bump": true
+            },
+            "approved_date": 1511783346000,
+            "offer": {
+                "code": "test",
+                "coupon_code": "SHHUHA"
+            },
+            "is_funnel": false,
+            "event_tickets": {
+                "amount": 1765222269982
+            },
+            "order_date": 1511783344000,
+            "price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "payment": {
+                "installments_number": 12,
+                "type": "CREDIT_CARD"
+            },
+            "full_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "business_model": "I",
+            "transaction": "HP16015479281022",
+            "status": "APPROVED"
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "Q58388177J",
+                "name": "Affiliate name"
+            }
+        ],
+        "producer": {
+            "legal_nature": "Pessoa Física",
+            "document": "12345678965",
+            "name": "Producer Test Name"
+        },
+        "subscription": {
+            "subscriber": {
+                "code": "I9OT62C3"
+            },
+            "plan": {
+                "name": "plano de teste",
+                "id": 123
+            },
+            "status": "ACTIVE"
+        },
+        "buyer": {
+            "checkout_phone_code": "999999999",
+            "address": {
+                "zipcode": "38400123",
+                "country": "Brasil",
+                "number": "10",
+                "address": "Avenida Francisco Galassi",
+                "city": "Uberlândia",
+                "state": "Minas Gerais",
+                "neighborhood": "Tubalina",
+                "complement": "Perto do shopping",
+                "country_iso": "BR"
+            },
+            "document": "69526128664",
+            "name": "Teste Comprador",
+            "last_name": "Comprador",
+            "checkout_phone": "99999999900",
+            "first_name": "Teste",
+            "email": "testeComprador271101postman15@example.com",
+            "document_type": "CPF"
+        }
+    },
+    "id": "273bf2c3-a164-4069-97df-2240a7f0e7ad",
+    "creation_date": 1765222270008,
+    "event": "PURCHASE_APPROVED",
+    "version": "2.0.0"
+}
+{
+    "data": {
+        "product": {
+            "support_email": "support@hotmart.com.br",
+            "has_co_production": false,
+            "name": "Produto test postback2",
+            "warranty_date": "2017-12-27T00:00:00Z",
+            "is_physical_product": false,
+            "id": 0,
+            "ucode": "fb056612-bcc6-4217-9e6d-2a5d1110ac2f",
+            "content": {
+                "has_physical_products": true,
+                "products": [
+                    {
+                        "name": "How to Make Clear Ice",
+                        "is_physical_product": false,
+                        "id": 4774438,
+                        "ucode": "559fef42-3406-4d82-b775-d09bd33936b1"
+                    },
+                    {
+                        "name": "Organizador de Poeira",
+                        "is_physical_product": true,
+                        "id": 4999597,
+                        "ucode": "099e7644-b7d1-43d6-82a9-ec6be0118a4b"
+                    }
+                ]
+            }
+        },
+        "commissions": [
+            {
+                "currency_value": "BRL",
+                "source": "MARKETPLACE",
+                "value": 149.5
+            },
+            {
+                "currency_value": "BRL",
+                "source": "PRODUCER",
+                "value": 1350.5
+            }
+        ],
+        "purchase": {
+            "original_offer_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "checkout_country": {
+                "iso": "BR",
+                "name": "Brasil"
+            },
+            "sckPaymentLink": "sckPaymentLinkTest",
+            "order_bump": {
+                "parent_purchase_transaction": "HP02316330308193",
+                "is_order_bump": true
+            },
+            "approved_date": 1511783346000,
+            "offer": {
+                "code": "test",
+                "coupon_code": "SHHUHA"
+            },
+            "is_funnel": false,
+            "event_tickets": {
+                "amount": 1765222270046
+            },
+            "order_date": 1511783344000,
+            "price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "payment": {
+                "installments_number": 12,
+                "type": "CREDIT_CARD"
+            },
+            "full_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "business_model": "I",
+            "transaction": "HP16015479281022",
+            "status": "CHARGEBACK"
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "Q58388177J",
+                "name": "Affiliate name"
+            }
+        ],
+        "producer": {
+            "legal_nature": "Pessoa Física",
+            "document": "12345678965",
+            "name": "Producer Test Name"
+        },
+        "subscription": {
+            "subscriber": {
+                "code": "I9OT62C3"
+            },
+            "plan": {
+                "name": "plano de teste",
+                "id": 123
+            },
+            "status": "ACTIVE"
+        },
+        "buyer": {
+            "checkout_phone_code": "999999999",
+            "address": {
+                "zipcode": "38400123",
+                "country": "Brasil",
+                "number": "10",
+                "address": "Avenida Francisco Galassi",
+                "city": "Uberlândia",
+                "state": "Minas Gerais",
+                "neighborhood": "Tubalina",
+                "complement": "Perto do shopping",
+                "country_iso": "BR"
+            },
+            "document": "69526128664",
+            "name": "Teste Comprador",
+            "last_name": "Comprador",
+            "checkout_phone": "99999999900",
+            "first_name": "Teste",
+            "email": "testeComprador271101postman15@example.com",
+            "document_type": "CPF"
+        }
+    },
+    "id": "fd8e322c-36b7-4b2e-8d70-64ad798a12c8",
+    "creation_date": 1765222270074,
+    "event": "PURCHASE_CHARGEBACK",
+    "version": "2.0.0"
+}
+{
+    "data": {
+        "product": {
+            "support_email": "support@hotmart.com.br",
+            "has_co_production": false,
+            "name": "Produto test postback2",
+            "warranty_date": "2017-12-27T00:00:00Z",
+            "is_physical_product": false,
+            "id": 0,
+            "ucode": "fb056612-bcc6-4217-9e6d-2a5d1110ac2f",
+            "content": {
+                "has_physical_products": true,
+                "products": [
+                    {
+                        "name": "How to Make Clear Ice",
+                        "is_physical_product": false,
+                        "id": 4774438,
+                        "ucode": "559fef42-3406-4d82-b775-d09bd33936b1"
+                    },
+                    {
+                        "name": "Organizador de Poeira",
+                        "is_physical_product": true,
+                        "id": 4999597,
+                        "ucode": "099e7644-b7d1-43d6-82a9-ec6be0118a4b"
+                    }
+                ]
+            }
+        },
+        "commissions": [
+            {
+                "currency_value": "BRL",
+                "source": "MARKETPLACE",
+                "value": 149.5
+            },
+            {
+                "currency_value": "BRL",
+                "source": "PRODUCER",
+                "value": 1350.5
+            }
+        ],
+        "purchase": {
+            "original_offer_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "checkout_country": {
+                "iso": "BR",
+                "name": "Brasil"
+            },
+            "sckPaymentLink": "sckPaymentLinkTest",
+            "order_bump": {
+                "parent_purchase_transaction": "HP02316330308193",
+                "is_order_bump": true
+            },
+            "approved_date": 1511783346000,
+            "offer": {
+                "code": "test",
+                "coupon_code": "SHHUHA"
+            },
+            "is_funnel": false,
+            "event_tickets": {
+                "amount": 1765222270155
+            },
+            "order_date": 1511783344000,
+            "price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "payment": {
+                "installments_number": 12,
+                "type": "CREDIT_CARD"
+            },
+            "full_price": {
+                "currency_value": "BRL",
+                "value": 1500
+            },
+            "business_model": "I",
+            "transaction": "HP16015479281022",
+            "status": "COMPLETED"
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "Q58388177J",
+                "name": "Affiliate name"
+            }
+        ],
+        "producer": {
+            "legal_nature": "Pessoa Física",
+            "document": "12345678965",
+            "name": "Producer Test Name"
+        },
+        "subscription": {
+            "subscriber": {
+                "code": "I9OT62C3"
+            },
+            "plan": {
+                "name": "plano de teste",
+                "id": 123
+            },
+            "status": "ACTIVE"
+        },
+        "buyer": {
+            "checkout_phone_code": "999999999",
+            "address": {
+                "zipcode": "38400123",
+                "country": "Brasil",
+                "number": "10",
+                "address": "Avenida Francisco Galassi",
+                "city": "Uberlândia",
+                "state": "Minas Gerais",
+                "neighborhood": "Tubalina",
+                "complement": "Perto do shopping",
+                "country_iso": "BR"
+            },
+            "document": "69526128664",
+            "name": "Teste Comprador",
+            "last_name": "Comprador",
+            "checkout_phone": "99999999900",
+            "first_name": "Teste",
+            "email": "testeComprador271101postman15@example.com",
+            "document_type": "CPF"
+        }
+    },
+    "id": "d4ffe5ce-59f9-4db8-b1bd-3c6971cbcfd2",
+    "creation_date": 1765222270181,
+    "event": "PURCHASE_COMPLETE",
+    "version": "2.0.0"
+}
+{
+    "data": {
+        "date_next_charge": 1617105600000,
+        "product": {
+            "name": "Product name com ç e á",
+            "id": 788921
+        },
+        "actual_recurrence_value": 64.9,
+        "subscriber": {
+            "code": "0000aaaa",
+            "phone": {
+                "dddCell": "",
+                "phone": "",
+                "dddPhone": "",
+                "cell": ""
+            },
+            "name": "User name",
+            "email": "test@hotmart.com"
+        },
+        "subscription": {
+            "id": 4148584,
+            "plan": {
+                "name": "Subscription Plan Name",
+                "id": 114680
+            }
+        },
+        "cancellation_date": 1609181285500
+    },
+    "id": "26a1df56-840b-40ac-8ea3-77dec26fd8de",
+    "creation_date": 1765222270143,
+    "event": "SUBSCRIPTION_CANCELLATION",
+    "version": "2.0.0"
+}

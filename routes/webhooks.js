@@ -3,35 +3,38 @@ const { Router } = require('express');
 
 const router = Router();
 
-router.post('/activate', async (req, res) => {
-    const { email, first_name, last_name } = req.body.data?.buyer || {};
-    if (!email) return res.status(400).json({ error: 'Email obrigatório' });
+const ACTIVATE_EVENTS = ['PURCHASE_COMPLETE', 'PURCHASE_APPROVED'];
 
-    try {
-        const exists = await users.findByEmail(email);
-        if (exists) {
-            await users.updateStatus(email, 'active');
-            return res.json({ message: 'Usuário ativado', email });
-        }
-        await users.create({ email, first_name, last_name, status: 'active' });
-        res.status(201).json({ message: 'Usuário criado e ativado', email });
-    } catch (e) {
-        res.status(500).json({ error: 'Erro ao processar webhook' });
+router.post('/', async (req, res) => {
+    const { event, data } = req.body;
+    const buyer = data?.buyer || data?.subscriber;
+
+    if (!buyer?.email) {
+        return res.status(400).json({ error: 'Email não encontrado' });
     }
-});
 
-router.post('/suspend', async (req, res) => {
-    const { email } = req.body.data?.buyer || {};
-    if (!email) return res.status(400).json({ error: 'Email obrigatório' });
+    const { email, first_name, last_name } = buyer;
+    const shouldActivate = ACTIVATE_EVENTS.includes(event);
 
     try {
-        const user = await users.findByEmail(email);
-        if (!user) return res.status(404).json({ error: 'Usuário não encontrado' });
-        
-        await users.updateStatus(email, 'suspended');
-        res.json({ message: 'Usuário suspenso', email });
+        const existing = await users.findByEmail(email);
+
+        if (shouldActivate) {
+            if (existing) {
+                await users.updateStatus(email, 'active');
+            } else {
+                await users.create({ email, first_name, last_name, status: 'active' });
+            }
+            return res.json({ event, action: 'activated', email });
+        }
+
+        if (existing) {
+            await users.updateStatus(email, 'suspended');
+        }
+
+        res.json({ event, action: 'suspended', email });
     } catch (e) {
-        res.status(500).json({ error: 'Erro ao processar webhook' });
+        res.status(500).json({ error: e.message });
     }
 });
 

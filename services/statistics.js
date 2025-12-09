@@ -14,7 +14,7 @@ async function getByUser(userId) {
 function calculate(pitches) {
     const now = new Date();
     const total = pitches.length;
-    
+
     const thisMonth = pitches.filter(p => {
         const d = new Date(p.date_created);
         return d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear();
@@ -26,13 +26,13 @@ function calculate(pitches) {
     const underReview = byStatus('aguardando');
     const rate = total > 0 ? ((approved / total) * 100).toFixed(2) : '0.00';
 
-    const insights = total === 0 
+    const insights = total === 0
         ? 'Nenhum pitch enviado ainda. Comece a enviar suas músicas!'
         : [
             rate >= 50 ? 'Excelente taxa de aprovação!' : rate >= 25 ? 'Boa taxa de aprovação!' : total >= 5 ? 'Considere revisar a qualidade.' : '',
             thisMonth >= 10 ? 'Ótima atividade este mês!' : thisMonth === 0 ? 'Nenhum pitch este mês.' : '',
             underReview > 5 ? `${underReview} pitches aguardando.` : ''
-          ].filter(Boolean).join(' ') || 'Continue enviando pitches!';
+        ].filter(Boolean).join(' ') || 'Continue enviando pitches!';
 
     return {
         all_send_musics: String(total),

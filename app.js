@@ -5,12 +5,12 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
-app.use('/webhooks', require('./routes/webhooks'));
-app.use('/statistics', require('./routes/statistics'));
 app.use('/opportunities', require('./routes/opportunities'));
+app.use('/statistics', require('./routes/statistics'));
+app.use('/webhook', require('./routes/webhooks'));
 
 cron.init();
 

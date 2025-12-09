@@ -28,12 +28,12 @@ Sem markdown, sem texto adicional.`;
     if (!res.ok) throw new Error(`GPT Error: ${res.status}`);
 
     const data = await res.json();
-    let content = data.output_text || '';
 
-    if (!content && data.output) {
-        const msg = data.output.find(i => i.type === 'message');
-        content = msg?.content?.find(c => c.type === 'text')?.text || '';
-    }
+    const msg = data.output?.find(i => i.type === 'message');
+    const content = msg?.content?.find(c => c.type === 'output_text')?.text
+        || msg?.content?.find(c => c.type === 'text')?.text
+        || data.output_text
+        || '';
 
     const match = content.match(/\[[\s\S]*\]/);
     if (!match) return [];
